@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --primary-color: #553df2;
+  --secondary-color: #1f2373;
+  --tertiary-color: #CFD3FE;
+  --fourth-color: #EAEAF4;
+  font-family: Helvetica, sans-serif;
+  /* border: 1px solid red; */
+}
+
+body {
+  background-color: lightcyan;
+}
+
+html {
+  max-width: 100%;
+}
+
+/* CODE FOR NAVBAR */
+
+.top-info {
+  background-color: var(--secondary-color);
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1vh 0;
+  font-size: 1.1vmax;
+}
+
+.top-info > div {
+  display: flex;
+  align-items: center;
+}
+
+.top-info img {
+  height: 3vmin;
+  filter: invert();
+}
+
+.top-info span {
+  padding: 0 1vw;
+}
+
+.number {
+  border-right: 1px solid white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+}
+
+.dd{
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 3vmin;
+  margin-left: .5vw;
+}
+
+.logo {
+  padding: 4vh 0;
+}
+
+.current-link {
+  border-bottom: 3px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+nav > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav > div > div {
+  padding: 4vh 1vw;
+  margin: 0 0.7vw;
+}
+
+/* CODE FOR CAMPUS SECTION */
+
+.campus > h6 {
+  text-align: center;
+  font-size: 1.2vmax;
+}
+
+.campus > h3 {
+  text-align: center;
+  font-size: 2vmax;
+}
+
+.campus table {
+  margin: auto;
+}
+
+.campus table td {
+  padding: 4vh 2vw;
+}
+
+.campus table td div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.2s ease;
+  padding: 4vh 1vw;
+  border-radius: 10px;
+  width: 15vw;
+  cursor: pointer;
+}
+
+.campus table td div:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.campus table img {
+  width: 7vw;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 3vh;
+  border: 1px solid black;
+  border-radius: 50vw;
+}
+
+.photos-for-campus {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 0%;
+  height: 0%;
+  background-color: rgba(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.photos-for-campus img {
+  height: 100%;
+  border: 1px solid red;
+}
+
+.photos-for-campus span {
+  position: absolute;
+  display: none;
+  top: 20px;
+  right: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* CODE FOR ADMISSION SECTION */
+
+.admission h6{
+  text-align: center;
+  margin-bottom: 2vh;
+  font-size: 1.2vmax;
+  font-weight: 100;
+}
+
+.admission h3{
+  text-align: center;
+  margin-bottom: 10vh;
+  font-size: 2vmax;
+  font-weight: 700;
+}
+
+.admission-form{
+  width: 70vw;
+  margin: auto;
+  padding: 7vh 4vw;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--secondary-color);
+  background-color: var(--tertiary-color);
+}
+
+.admission-form > div{
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 2vw;
+  align-items: center;
+}
+
+.admission-form > div h4:first-child{
+  margin-bottom: 1vh;
+}
+
+.admission-form > div img{
+  margin-top: 5vh;
+}
+
+.admission-form form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.admission-form input{
+  width: 100%;
+  padding: 2vh 2vw;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--fourth-color);
+}
+
+.admission-form select{
+  border: none;
+  background-color: var(--fourth-color);
+  border-radius: 10px;
+  outline: none;
+  padding: 2vh 2vw;
+  width: 100%;
+}
+
+.admission-form button{
+  width: 50%;
+  margin: 2vh 0;
+  border: none;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 3vh 0; 
+  margin-top: 3vh;
+  border-radius: 5px;
+}
+
+.admission-form td{
+  padding: 2vh 1vw;
+}
